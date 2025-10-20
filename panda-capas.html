@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panda Capas - Tudo para seu celular! Capas, películas, carregadores, fones e acessórios. Atacado e varejo com os melhores preços. Loja em Contagem-MG. Entrega para todo Brasil!">
+    <meta name="keywords" content="capas de celular, películas, carregadores, acessórios para celular, panda capas, contagem, oiapoque, atacado, varejo">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Panda Capas - Tudo para seu Celular | Atacado e Varejo">
+    <meta property="og:description" content="Capas, películas, carregadores e muito mais! Os melhores preços em acessórios para celular. Enviamos para todo o Brasil.">
+    <meta property="og:site_name" content="Panda Capas">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Panda Capas - Acessórios para Celular">
+    <meta name="twitter:description" content="Tudo para seu celular com os melhores preços! Atacado e varejo.">
+    
+    <title>Panda Capas - Capas, Películas e Acessórios para Celular | Contagem-MG</title>
+    
+    <!-- JSON-LD Schema LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Panda Capas",
+      "image": "logo-placeholder.png",
+      "description": "Loja especializada em acessórios para celulares, capas, películas, carregadores e eletrônicos diversos.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Mário Vital, 168 - Box 01, 02, 03, 06, 45 e 51",
+        "addressLocality": "Contagem",
+        "addressRegion": "MG",
+        "addressCountry": "BR",
+        "postalCode": "32310-000"
+      },
+      "telephone": "+5531971052809",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://instagram.com/pandacapasofc"
+      ]
+    }
+    </script>
+    
+    <!-- INSERIR UA/GA4 AQUI -->
+    <!-- Exemplo: <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script> -->
+    
+    <style>
+        /* ========== RESET & BASE ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --color-black: #000000;
+            --color-yellow: #FFD700;
+            --color-yellow-dark: #E6C200;
+            --color-white: #FFFFFF;
+            --color-gray-light: #f2f2f2;
+            --color-gray-medium: #666666;
+            --color-gray-dark: #333333;
+            --transition: all 0.3s ease;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--color-gray-dark);
+            overflow-x: hidden;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        /* ========== CONTAINER ========== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* ========== HEADER ========== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--color-white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--color-black);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-emoji {
+            font-size: 2rem;
+        }
+        
+        .logo-text span {
+            color: var(--color-yellow);
+        }
+        
+        .nav-menu {
+            display: none;
+            gap: 2rem;
+        }
+        
+        .nav-menu a {
+            color: var(--color-black);
+            font-weight: 600;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--color-yellow);
+        }
+        
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-yellow);
+            transition: var(--transition);
+        }
+        
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+        
+        @media (min-width: 768px) {
+            .nav-menu {
+                display: flex;
+            }
+        }
+        
+        /* ========== FLOATING WHATSAPP BUTTON ========== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #25D366;
+            color: var(--color-white);
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+            z-index: 999;
+            transition: var(--transition);
+            cursor: pointer;
+            border: 3px solid var(--color-yellow);
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.7);
+        }
+        
+        /* ========== HERO SECTION ========== */
+        .hero {
+            background: linear-gradient(135deg, var(--color-black) 0%, #1a1a1a 100%);
+            color: var(--color-white);
+            padding: 140px 20px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 200%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+            animation: pulse 8s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            background: linear-gradient(135deg, var(--color-white) 0%, var(--color-yellow) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            color: var(--color-gray-light);
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-ctas {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: var(--transition);
+            cursor: pointer;
+            border: 2px solid transparent;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn-primary {
+            background: var(--color-yellow);
+            color: var(--color-black);
+            border-color: var(--color-yellow);
+        }
+        
+        .btn-primary:hover {
+            background: var(--color-yellow-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--color-white);
+            border-color: var(--color-white);
+        }
+        
+        .btn-outline:hover {
+            background: var(--color-white);
+            color: var(--color-black);
+            transform: translateY(-3px);
+        }
+        
+        .social-proof {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+            color: var(--color-gray-light);
+        }
+        
+        .social-proof-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .social-proof-item::before {
+            content: '✓';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--color-yellow);
+            color: var(--color-black);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            font-weight: 900;
+        }
+        
+        /* ========== SECTIONS ========== */
+        section {
+            padding: 80px 20px;
+        }
+        
+        .section-title {
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--color-black);
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            text-align: center;
+            color: var(--color-gray-medium);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* ========== PRODUCTS SECTION ========== */
+        .products {
+            background: var(--color-gray-light);
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .product-card {
+            background: var(--color-white);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(255, 215, 0, 0.3);
+        }
+        
+        .product-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .product-card h3 {
+            font-size: 1.4rem;
+            color: var(--color-black);
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+        
+        .product-card p {
+            color: var(--color-gray-medium);
+            line-height: 1.6;
+        }
+        
+        .benefits-list {
+            background: var(--color-white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            max-width: 900px;
+            margin: 0 auto 3rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .benefits-list ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .benefits-list li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.05rem;
+            color: var(--color-gray-dark);
+        }
+        
+        .benefits-list li::before {
+            content: '⭐';
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .products-ctas {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        /* ========== GALLERY SECTION ========== */
+        .gallery {
+            background: var(--color-white);
+        }
+        
+        .carousel-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .carousel-slide {
+            min-width: 100%;
+            aspect-ratio: 16/9;
+            background: var(--color-gray-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--color-gray-medium);
+            position: relative;
+        }
+        
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: var(--color-white);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 10;
+        }
+        
+        .carousel-btn:hover {
+            background: var(--color-yellow);
+            color: var(--color-black);
+        }
+        
+        .carousel-btn.prev {
+            left: 20px;
+        }
+        
+        .carousel-btn.next {
+            right: 20px;
+        }
+        
+        .carousel-indicators {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--color-gray-medium);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .indicator.active {
+            background: var(--color-yellow);
+            transform: scale(1.3);
+        }
+        
+        /* ========== TESTIMONIALS SECTION ========== */
+        .testimonials {
+            background: var(--color-gray-light);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background: var(--color-white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 5rem;
+            color: var(--color-yellow);
+            opacity: 0.3;
+            font-family: Georgia, serif;
+        }
+        
+        .stars {
+            color: var(--color-yellow);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-text {
+            color: var(--color-gray-dark);
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            line-height: 1.7;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--color-yellow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-black);
+        }
+        
+        .author-info h4 {
+            font-size: 1rem;
+            color: var(--color-black);
+            margin-bottom: 0.2rem;
+        }
+        
+        .author-info p {
+            font-size: 0.9rem;
+            color: var(--color-gray-medium);
+        }
+        
+        /* ========== FAQ SECTION ========== */
+        .faq {
+            background: var(--color-white);
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--color-gray-light);
+            margin-bottom: 1.5rem;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        
+        .faq-question {
+            padding: 1.5rem 2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            color: var(--color-black);
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover {
+            background: var(--color-yellow);
+        }
+        
+        .faq-icon {
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-answer-content {
+            padding: 0 2rem 1.5rem;
+            color: var(--color-gray-dark);
+            line-height: 1.7;
+        }
+        
+        /* ========== CONTACT FORM SECTION ========== */
+        .contact {
+            background: var(--color-gray-light);
+        }
+        
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--color-white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--color-black);
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--color-gray-light);
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-yellow);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .form-submit {
+            width: 100%;
+            padding: 1.2rem;
+            background: var(--color-yellow);
+            color: var(--color-black);
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .form-submit:hover {
+            background: var(--color-yellow-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+        }
+        
+        /* ========== TOAST NOTIFICATION ========== */
+        .toast {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            background: var(--color-black);
+            color: var(--color-white);
+            padding: 1.5rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+        }
+        
+        .toast.show {
+            transform: translateX(0);
+        }
+        
+        .toast-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .toast-icon {
+            font-size: 1.5rem;
+        }
+        
+        /* ========== MAP SECTION ========== */
+        .map {
+            background: var(--color-white);
+        }
+        
+        .map-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            border: 4px solid var(--color-yellow);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+        
+        .location-details {
+            background: var(--color-gray-light);
+            padding: 2.5rem;
+            border-radius: 20px;
+            max-width: 800px;
+            margin: 3rem auto 0;
+            text-align: center;
+        }
+        
+        .location-details h3 {
+            color: var(--color-black);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .location-details p {
+            color: var(--color-gray-dark);
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+        }
+        
+        .location-details strong {
+            color: var(--color-black);
+        }
+        
+        /* ========== FOOTER ========== */
+        footer {
+            background: var(--color-black);
+            color: var(--color-white);
+            padding: 3rem 20px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--color-yellow);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: var(--color-gray-light);
+            margin-bottom: 0.5rem;
+            display: block;
+            transition: var(--transition);
+        }
+        
+        .footer-section a:hover {
+            color: var(--color-yellow);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--color-gray-dark);
+            color: var(--color-gray-medium);
+        }
+        
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 120px 20px 60px;
+            }
+            
+            section {
+                padding: 60px 20px;
+            }
+            
+            .btn {
+                padding: 0.9rem 2rem;
+                font-size: 0.95rem;
+            }
+            
+            .carousel-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+            
+            .carousel-btn.prev {
+                left: 10px;
+            }
+            
+            .carousel-btn.next {
+                right: 10px;
+            }
+            
+            .form-container {
+                padding: 2rem;
+            }
+            
+            .map-container iframe {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-emoji">🐼</span>
+                <div class="logo-text">Panda <span>Capas</span></div>
+            </div>
+            <div class="nav-menu">
+                <a href="#inicio" aria-label="Ir para o início">Início</a>
+                <a href="#produtos" aria-label="Ver produtos">Produtos</a>
+                <a href="#galeria" aria-label="Ver galeria">Galeria</a>
+                <a href="#localizacao" aria-label="Ver localização">Localização</a>
+                <a href="#contato" aria-label="Entrar em contato">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========== FLOATING WHATSAPP BUTTON ========== -->
+    <!-- INSTRUÇÕES: Trocar o número de telefone no link abaixo -->
+    <a href="https://wa.me/5531971052809?text=Olá!%20Vim%20pelo%20site%20e%20quero%20mais%20informações%20sobre%20os%20produtos." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Fale conosco no WhatsApp"
+       title="Fale conosco no WhatsApp">
+        💬
+    </a>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Tudo para seu celular — direto da Panda Capas</h1>
+            <p>Capas, películas, fones, carregadores e muito mais — atacado e varejo</p>
+            
+            <div class="hero-ctas">
+                <a href="https://wa.me/5531971052809?text=Olá!%20Quero%20conhecer%20os%20produtos%20da%20Panda%20Capas" 
+                   class="btn btn-primary" 
+                   target="_blank"
+                   data-testid="button-hero-whatsapp">
+                    Fale no WhatsApp
+                </a>
+                <a href="#localizacao" class="btn btn-outline" data-testid="button-hero-visit">
+                    Visite Nossa Loja
+                </a>
+            </div>
+            
+            <div class="social-proof">
+                <div class="social-proof-item">+10.000 clientes satisfeitos</div>
+                <div class="social-proof-item">Enviamos para todo o Brasil</div>
+                <div class="social-proof-item">Garantia total</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRODUCTS SECTION ========== -->
+    <section id="produtos" class="products">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <p class="section-subtitle">Encontre tudo o que você precisa para proteger e personalizar seu celular</p>
+            
+            <div class="products-grid">
+                <div class="product-card" data-testid="card-product-capas">
+                    <div class="product-icon">📱</div>
+                    <h3>Capas Personalizadas</h3>
+                    <p>Capas para todos os modelos de celular. Proteção e estilo em um só produto.</p>
+                </div>
+                
+                <div class="product-card" data-testid="card-product-peliculas">
+                    <div class="product-icon">🛡️</div>
+                    <h3>Películas de Vidro</h3>
+                    <p>Películas de vidro temperado 9H. Máxima proteção para a tela do seu smartphone.</p>
+                </div>
+                
+                <div class="product-card" data-testid="card-product-carregadores">
+                    <div class="product-icon">🔌</div>
+                    <h3>Carregadores</h3>
+                    <p>Carregadores originais e compatíveis. Entrega rápida e garantia de qualidade.</p>
+                </div>
+                
+                <div class="product-card" data-testid="card-product-fones">
+                    <div class="product-icon">🎧</div>
+                    <h3>Fones de Ouvido</h3>
+                    <p>Fones com fio e Bluetooth. Qualidade de som incrível para suas músicas.</p>
+                </div>
+                
+                <div class="product-card" data-testid="card-product-suportes">
+                    <div class="product-icon">🚗</div>
+                    <h3>Suportes Veiculares</h3>
+                    <p>Suportes para carro, mesa e parede. Praticidade no dia a dia.</p>
+                </div>
+                
+                <div class="product-card" data-testid="card-product-eletronicos">
+                    <div class="product-icon">⚡</div>
+                    <h3>Eletrônicos Diversos</h3>
+                    <p>Smartwatches, power banks, cabos e muito mais. Tudo em um só lugar!</p>
+                </div>
+            </div>
+            
+            <div class="benefits-list">
+                <ul>
+                    <li>Variedade de produtos para todos os gostos</li>
+                    <li>Preços justos e competitivos</li>
+                    <li>Vendas no atacado e varejo</li>
+                    <li>Garantia em todos os produtos</li>
+                    <li>Atendimento rápido e personalizado</li>
+                    <li>Envio para todo o Brasil</li>
+                </ul>
+            </div>
+            
+            <div class="products-ctas">
+                <a href="https://wa.me/5531971052809?text=Olá!%20Quero%20ver%20o%20catálogo%20completo%20da%20Panda%20Capas" 
+                   class="btn btn-primary" 
+                   target="_blank"
+                   data-testid="button-catalog">
+                    Ver Catálogo Completo
+                </a>
+                <a href="https://wa.me/5531971052809?text=Olá!%20Quero%20comprar%20produtos%20da%20Panda%20Capas" 
+                   class="btn btn-outline" 
+                   target="_blank"
+                   data-testid="button-buy-whatsapp"
+                   style="background: var(--color-black); color: var(--color-white); border-color: var(--color-black);">
+                    Fale Agora no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALLERY SECTION ========== -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Galeria de Produtos</h2>
+            <p class="section-subtitle">Confira alguns dos nossos produtos mais vendidos</p>
+            
+            <!-- INSTRUÇÕES: Substitua as imagens abaixo pelos seus próprios arquivos
+                 Crie uma pasta chamada "assets" na raiz do projeto e coloque suas imagens lá
+                 Ex: /assets/produto-1.jpg, /assets/produto-2.jpg, etc. -->
+            <div class="carousel-container">
+                <button class="carousel-btn prev" aria-label="Imagem anterior" data-testid="button-carousel-prev">‹</button>
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <!-- <img src="/assets/produto-1.jpg" alt="Capas personalizadas para celular"> -->
+                        <span>📱 Capas Personalizadas<br>Imagem: /assets/produto-1.jpg</span>
+                    </div>
+                    <div class="carousel-slide">
+                        <!-- <img src="/assets/produto-2.jpg" alt="Películas de vidro temperado"> -->
+                        <span>🛡️ Películas de Vidro<br>Imagem: /assets/produto-2.jpg</span>
+                    </div>
+                    <div class="carousel-slide">
+                        <!-- <img src="/assets/produto-3.jpg" alt="Carregadores e cabos"> -->
+                        <span>🔌 Carregadores<br>Imagem: /assets/produto-3.jpg</span>
+                    </div>
+                    <div class="carousel-slide">
+                        <!-- <img src="/assets/produto-4.jpg" alt="Fones de ouvido Bluetooth"> -->
+                        <span>🎧 Fones Bluetooth<br>Imagem: /assets/produto-4.jpg</span>
+                    </div>
+                    <div class="carousel-slide">
+                        <!-- <img src="/assets/produto-5.jpg" alt="Suportes veiculares"> -->
+                        <span>🚗 Suportes Veiculares<br>Imagem: /assets/produto-5.jpg</span>
+                    </div>
+                </div>
+                <button class="carousel-btn next" aria-label="Próxima imagem" data-testid="button-carousel-next">›</button>
+            </div>
+            
+            <div class="carousel-indicators" id="carousel-indicators"></div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section id="depoimentos" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+            <p class="section-subtitle">Confira a opinião de quem já comprou com a gente</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-testid="card-testimonial-1">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Comprei uma capa para meu iPhone e adorei! A qualidade é excelente e o atendimento foi super rápido. Recomendo demais!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <h4>Mariana Silva</h4>
+                            <p>Cliente verificada</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-testid="card-testimonial-2">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Ótimos preços no atacado! Compro regularmente para revender e meus clientes sempre elogiam a qualidade dos produtos."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <h4>Rafael Oliveira</h4>
+                            <p>Cliente atacado</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-testid="card-testimonial-3">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Sempre encontro o que preciso aqui! A variedade de produtos é incrível e o pessoal é muito atencioso. Virei cliente fiel!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">C</div>
+                        <div class="author-info">
+                            <h4>Carla Santos</h4>
+                            <p>Cliente verificada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ SECTION ========== -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <p class="section-subtitle">Tire suas dúvidas sobre nossos produtos e serviços</p>
+            
+            <div class="faq-container">
+                <div class="faq-item" data-testid="faq-item-1">
+                    <div class="faq-question">
+                        <span>Vocês fazem envios para todo o Brasil?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Sim! Enviamos para todos os estados brasileiros através dos Correios e transportadoras parceiras. O prazo varia de acordo com a região, mas geralmente leva de 5 a 15 dias úteis.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-testid="faq-item-2">
+                    <div class="faq-question">
+                        <span>Os produtos têm garantia?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Sim! Todos os nossos produtos possuem garantia contra defeitos de fabricação. Capas e películas têm garantia de 30 dias, e produtos eletrônicos têm garantia de 90 dias. Se houver qualquer problema, trocamos sem burocracia!
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-testid="faq-item-3">
+                    <div class="faq-question">
+                        <span>Quais são as formas de pagamento?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Aceitamos dinheiro, PIX, cartões de débito e crédito (à vista ou parcelado). Para compras no atacado, também trabalhamos com boleto bancário e condições especiais de pagamento.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-testid="faq-item-4">
+                    <div class="faq-question">
+                        <span>Onde fica a loja física?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Nossa loja fica na R. Mário Vital, 168 - Box 01, 02, 03, 06, 45 e 51, no bairro Eldorado, em Contagem-MG. Também temos uma unidade na Rua Portugal, 525 - Box 10/140, no bairro Glória. Funcionamos de segunda a sábado, das 8h às 18h.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-testid="faq-item-5">
+                    <div class="faq-question">
+                        <span>Como funciona a compra no atacado?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Para compras no atacado, trabalhamos com quantidades mínimas que variam de acordo com o produto. Entre em contato pelo WhatsApp para receber nossa tabela de preços e condições especiais para revendedores!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT FORM SECTION ========== -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-subtitle">Preencha o formulário e fale conosco pelo WhatsApp</p>
+            
+            <div class="form-container">
+                <form id="contact-form" data-testid="form-contact">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" required aria-label="Digite seu nome completo" data-testid="input-name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Telefone / WhatsApp</label>
+                        <input type="tel" id="phone" name="phone" required aria-label="Digite seu telefone" data-testid="input-phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" required aria-label="Digite sua mensagem" data-testid="input-message"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form-submit" data-testid="button-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MAP SECTION ========== -->
+    <section id="localizacao" class="map">
+        <div class="container">
+            <h2 class="section-title">Nossa Localização</h2>
+            <p class="section-subtitle">Visite uma de nossas lojas físicas em Contagem-MG</p>
+            
+            <!-- INSTRUÇÕES: Para adicionar o mapa real do Google Maps:
+                 1. Acesse: https://www.google.com/maps
+                 2. Busque pelo endereço: R. Mário Vital, 168 - Eldorado, Contagem - MG
+                 3. Clique em "Compartilhar" > "Incorporar um mapa"
+                 4. Copie o código <iframe> e substitua o src abaixo -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.123456789!2d-44.0654321!3d-19.9123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDU0JzQ0LjQiUyA0NMKwMDMnNTUuNiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Localização da Panda Capas no mapa"
+                    aria-label="Mapa mostrando a localização da Panda Capas">
+                </iframe>
+            </div>
+            
+            <div class="location-details">
+                <h3>📍 Unidade Eldorado</h3>
+                <p><strong>Endereço:</strong> R. Mário Vital, 168 - Box 01, 02, 03, 06, 45 e 51<br>Eldorado, Contagem - MG</p>
+                <p><strong>Horário:</strong> Segunda a Sábado, 8h às 18h</p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/5531971052809" target="_blank" style="color: var(--color-yellow); font-weight: 700;">(31) 97105-2809</a></p>
+                <p><strong>Instagram:</strong> <a href="https://instagram.com/pandacapasofc" target="_blank" style="color: var(--color-yellow); font-weight: 700;">@pandacapasofc</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Panda Capas</h3>
+                <p>Sua loja especializada em acessórios para celular. Qualidade, variedade e os melhores preços!</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>📍 R. Mário Vital, 168 - Eldorado</p>
+                <p>Contagem - MG</p>
+                <p>📱 WhatsApp: (31) 97105-2809</p>
+                <p>📧 contato@pandacapas.com.br</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Horário de Funcionamento</h3>
+                <p>Segunda a Sexta: 8h às 18h</p>
+                <p>Sábado: 8h às 18h</p>
+                <p>Domingo: Fechado</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <a href="https://instagram.com/pandacapasofc" target="_blank">📷 Instagram</a>
+                <a href="https://wa.me/5531971052809" target="_blank">💬 WhatsApp</a>
+                <!-- INSTRUÇÕES: Adicione links para outras redes sociais aqui -->
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p><a href="#" style="color: var(--color-gray-medium);">Política de Privacidade</a> | <a href="#" style="color: var(--color-gray-medium);">Termos de Uso</a></p>
+            <p>© 2025 Panda Capas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ========== TOAST NOTIFICATION ========== -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <span class="toast-icon">✓</span>
+            <span id="toast-message">Mensagem enviada com sucesso!</span>
+        </div>
+    </div>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+        // ========== CAROUSEL FUNCTIONALITY ==========
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        const nextButton = document.querySelector('.carousel-btn.next');
+        const prevButton = document.querySelector('.carousel-btn.prev');
+        const indicatorsContainer = document.getElementById('carousel-indicators');
+        
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+        
+        // Create indicators
+        slides.forEach((_, index) => {
+            const indicator = document.createElement('div');
+            indicator.classList.add('indicator');
+            if (index === 0) indicator.classList.add('active');
+            indicator.addEventListener('click', () => goToSlide(index));
+            indicatorsContainer.appendChild(indicator);
+        });
+        
+        const indicators = Array.from(indicatorsContainer.children);
+        
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
+        }
+        
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }
+        
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+        
+        nextButton.addEventListener('click', nextSlide);
+        prevButton.addEventListener('click', prevSlide);
+        
+        // Auto-advance carousel
+        let autoAdvance = setInterval(nextSlide, 5000);
+        
+        // Pause auto-advance on hover
+        const carouselContainer = document.querySelector('.carousel-container');
+        carouselContainer.addEventListener('mouseenter', () => clearInterval(autoAdvance));
+        carouselContainer.addEventListener('mouseleave', () => autoAdvance = setInterval(nextSlide, 5000));
+        
+        // ========== FAQ ACCORDION ==========
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all items
+                faqItems.forEach(faqItem => {
+                    faqItem.classList.remove('active');
+                    faqItem.querySelector('.faq-answer').style.maxHeight = null;
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+        
+        // ========== CONTACT FORM ==========
+        const contactForm = document.getElementById('contact-form');
+        const toast = document.getElementById('toast');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Create WhatsApp message
+            const whatsappMessage = `Olá! Meu nome é ${name}.\n\nTelefone: ${phone}\n\nMensagem: ${message}`;
+            const whatsappURL = `https://wa.me/5531971052809?text=${encodeURIComponent(whatsappMessage)}`;
+            
+            // Show toast
+            showToast('Redirecionando para o WhatsApp...');
+            
+            // Open WhatsApp
+            setTimeout(() => {
+                window.open(whatsappURL, '_blank');
+                contactForm.reset();
+            }, 1000);
+        });
+        
+        function showToast(message) {
+            const toastMessage = document.getElementById('toast-message');
+            toastMessage.textContent = message;
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+        
+        // ========== SMOOTH SCROLL ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offsetTop = target.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+        
+        // ========== HEADER SCROLL EFFECT ==========
+        let lastScroll = 0;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            }
+            
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>
+
+<!-- 
+========================================
+INSTRUÇÕES PARA USO NO REPLIT
+========================================
+
+1. COMO SUBIR ESTE ARQUIVO NO REPLIT:
+   - Crie um novo Repl do tipo "HTML, CSS, JS"
+   - Cole este código completo no arquivo index.html
+   - Clique em "Run" para visualizar
+
+2. ADICIONANDO IMAGENS:
+   - Crie uma pasta chamada "assets" na raiz do projeto
+   - Adicione suas imagens nesta pasta (produto-1.jpg, produto-2.jpg, etc.)
+   - Descomente as tags <img> dentro do carrossel e remova os placeholders
+
+3. PERSONALIZAÇÕES IMPORTANTES:
+   
+   a) TELEFONE/WHATSAPP (trocar em todos os lugares):
+      - Busque por: 5531971052809
+      - Substitua pelo seu número no formato internacional
+      - Exemplo: 5511999999999 (55 + DDD + número)
+   
+   b) GOOGLE MAPS:
+      - Acesse: https://www.google.com/maps
+      - Busque seu endereço
+      - Clique em "Compartilhar" > "Incorporar um mapa"
+      - Copie o código iframe e substitua na seção de mapa
+   
+   c) REDES SOCIAIS:
+      - Atualize o link do Instagram (@pandacapasofc)
+      - Adicione outras redes sociais no rodapé
+   
+   d) LOGO:
+      - Substitua "logo-placeholder.png" pelo caminho da sua logo
+      - Ou mantenha o emoji 🐼
+   
+   e) GOOGLE ANALYTICS:
+      - Descomente a linha <!-- INSERIR UA/GA4 AQUI -->
+      - Adicione seu código de rastreamento
+
+4. CORES DA MARCA:
+   - Preto: #000000
+   - Amarelo: #FFD700
+   - Branco: #FFFFFF
+   - Cinza claro: #f2f2f2
+   
+   Para alterar, edite as variáveis CSS em :root
+
+5. CONTEÚDO:
+   - Atualize textos conforme necessário
+   - Adicione ou remova produtos
+   - Personalize depoimentos com casos reais
+   - Atualize FAQ com perguntas dos seus clientes
+
+6. SEO:
+   - Preencha as meta tags com informações corretas
+   - Atualize title e description
+   - Configure Google Analytics
+   - Adicione Schema.org com dados reais
+
+DÚVIDAS? Entre em contato!
+========================================
+-->
